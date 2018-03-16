@@ -1,0 +1,9 @@
+h1, h4 {
+    text-align: center;
+    color: white;
+}
+.navbar {
+    background-color: #3e677e;
+    text-align: center;
+    padding: 20px;
+}
