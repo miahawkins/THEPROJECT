@@ -12,7 +12,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-/* input[type=text], select {
+input[type=text], select {
     width: 100%;
     padding: 12px;
     margin-left: 5%;
@@ -35,7 +35,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-} */
+}
 
 .dButton {
     background-color: red;
