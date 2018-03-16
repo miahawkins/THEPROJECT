@@ -6,13 +6,13 @@ import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 import Nav from "../Nav";
 import Footer from "../Footer";
+import Input from "../Input";
 
 const SignInPage = ({ history }) =>
   <div>
     <h1>SignIn</h1>
     <SignInForm history={history} />
-    <PasswordForgetLink />
-    <SignUpLink />
+
   </div>
 
 const updateByPropertyName = (propertyName, value) => () => ({
@@ -70,13 +70,13 @@ class SignInForm extends Component {
         <Nav />
           <form onSubmit={this.onSubmit}>
             
-            <input
+            <Input
               value={email}
               onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
               type="text"
               placeholder="Email Address"
             />
-            <input
+            <Input
               value={password}
               onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
               type="password"
@@ -86,8 +86,11 @@ class SignInForm extends Component {
               Sign In
             </button>
 
-            { error && <p>{error.message}</p> }
+            <br/><br/>
 
+            { error && <p>{error.message}</p> }
+            <PasswordForgetLink />
+            <SignUpLink />
           </form>
         <Footer />
       </div>
