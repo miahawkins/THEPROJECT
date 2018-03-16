@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from "../Nav";
 import Footer from "../Footer";
 import "./index.css";
+import "../Footer/Footer.css";
 
 const LandingPage = () =>
   <div>

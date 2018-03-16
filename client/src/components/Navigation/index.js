@@ -13,14 +13,14 @@ const Navigation = (props, { authUser }) =>
     }
   </div>
 
-Navigation.contextTypes = {
-  authUser: PropTypes.object,
+  Navigation.contextTypes = {
+    authUser: PropTypes.object,
 };
 
 const NavigationAuth = () =>
   <div className="links">
-    <p> | <Link to={routes.HOME}>Home</Link> | <Link to={routes.ACCOUNT}>Account</Link> | <Link to={routes.TODO}>To Do App</Link> | <Link to={routes.CALENDAR}>Calendar App</Link> | <Link to={routes.EXCEL}>Table Data App</Link>|</p>
-    <p><SignOutButton /></p>
+    <p>  <Link to={routes.HOME}>Home</Link> | <Link to={routes.ACCOUNT}>Account</Link> | <Link to={routes.TODO}>To Do App</Link> | <Link to={routes.CALENDAR}>Calendar App</Link> | <Link to={routes.EXCEL}>Table Data App</Link></p>
+    {/* <p><SignOutButton /></p> */}
   </div>
 
 const NavigationNonAuth = () =>

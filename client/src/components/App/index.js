@@ -25,7 +25,7 @@ const App = () =>
       <Route exact path={routes.SIGN_IN} component={() => <SignInPage />} />
       <Route exact path={routes.PASSWORD_FORGET} component={() => <PasswordForgetPage />} />
       <Route exact path={routes.HOME} component={() => <HomePage />} />
-      <Route exact path={routes.TODO} component={() => <Todo />} />
+      <Route exact path={routes.TODO} component={({ authUser }) => <Todo />} />
       <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
       <Route exact path={routes.EXCEL} component={() => <Excel />} />
       <Route exact path={routes.CALENDAR} component={() => <Calendar />} />

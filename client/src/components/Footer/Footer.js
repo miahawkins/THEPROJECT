@@ -1,12 +1,15 @@
 import React from "react";
-import "./Footer.css";
+// import "./Footer.css";
 import Navigation from "../Navigation";
+import SignOut from "../SignOut";
 
 const Footer = () =>
   <div className= "footer">
     <div id="ftr">
     <Navigation />
-      Kat Allen | Mia Hawkins - 2018
+    <SignOut />
+    <br/><br/>
+    <p>Kat Allen | Mia Hawkins - 2018</p>
     </div>
   </div>;
 
