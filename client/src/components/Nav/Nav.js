@@ -10,10 +10,11 @@ const Nav = () =>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">Project Portal</a>
-        <Navigation />
+        <a class="navbar-brand" href="/">Project Portal</a> 
+        
+        
       </div>
-      
+      <Navigation />
     </div>
   <div>
      <h4>A Collection Of Work Solutions</h4>

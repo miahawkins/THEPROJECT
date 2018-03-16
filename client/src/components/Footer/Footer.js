@@ -7,6 +7,7 @@ const Footer = () =>
   <div className= "footer">
     <div id="ftr">
     <Navigation />
+    <br/>
     <SignOut />
     <br/><br/>
     <p>Kat Allen | Mia Hawkins - 2018</p>

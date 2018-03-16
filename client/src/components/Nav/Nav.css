@@ -5,13 +5,20 @@ h1, h4 {
 .navbar {
     background-color: #3e677e;
     text-align: center;
-    padding: 20px;
+    padding: 16px;
 }
 
 .links a{
     color: white;
+    font-size: 16px;
+    margin: 0;
 }
-/* 
-a {
-    color: white!important;
-} */
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-header {
+    margin: 0;
+}
