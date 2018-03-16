@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { auth } from '../../firebase';
+import Input from "../Input";
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value,
@@ -45,14 +46,16 @@ class PasswordChangeForm extends Component {
 
     return (
       <div>
+
+        
         <form onSubmit={this.onSubmit}>
-          <input
+          <Input
             value={passwordOne}
             onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
             type="password"
             placeholder="New Password"
           />
-          <input
+          <Input
             value={passwordTwo}
             onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
             type="password"
