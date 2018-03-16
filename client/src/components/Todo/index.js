@@ -6,12 +6,21 @@ import TodoList from '../TodoList/TodoList';
 import TodoForm from '../TodoForm/TodoForm';
 import Nav from "../Nav";
 import Footer from "../Footer";
+import withAuthorization from '../Session/withAuthorization';
+import PropTypes from 'prop-types';
 
 class Todo extends Component {
   state = {
     todos: []
   };
   
+  constructor({authUser}) {
+    super();
+    Todo.contextTypes = {
+      authUser: PropTypes.object,
+    };
+  }
+
   componentDidMount() {
     this.loadTodos();
   }
@@ -67,6 +76,8 @@ class Todo extends Component {
       })
   }
 
+
+
   render() {
     return (
       <div className="App">
@@ -88,3 +99,6 @@ class Todo extends Component {
 }
 
 export default Todo;
+
+// export default withAuthorization(authUser)(Todo);
+
