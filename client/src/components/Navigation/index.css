@@ -1,3 +1,7 @@
-links {
-    color: white;
+p {
+    margin: 0;
+}
+
+.navbar-header {
+    margin: 0;
 }
