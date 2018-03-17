@@ -10,7 +10,7 @@ const Nav = () =>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">Project Portal</a> 
+        <a class="navbar-brand" href="/"></a> 
         
         
       </div>
@@ -18,7 +18,7 @@ const Nav = () =>
     </div>
   <div>
      <h4>A Collection Of Work Solutions</h4>
-     <img src="https://cdn3.iconfinder.com/data/icons/seo-and-marketing-3-11/512/135-256.png" height="20%" width="20%"/>
+     <img src="https://cdn3.iconfinder.com/data/icons/seo-and-marketing-3-11/512/135-256.png" height="35%" width="35%"/>
   </div>
 </nav>
       

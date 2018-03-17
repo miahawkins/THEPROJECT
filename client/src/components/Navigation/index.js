@@ -24,7 +24,9 @@ const NavigationAuth = () =>
 
 const NavigationNonAuth = () =>
   <div className="links">
-    <p><Link to={routes.LANDING}>Landing</Link> | <Link to={routes.SIGN_IN}>Sign In</Link></p>
+    <p>
+      {/* <Link to={routes.LANDING}>Landing</Link> |  */}
+    <Link to={routes.SIGN_IN}>Sign In</Link></p>
   </div>
 
 export default Navigation;

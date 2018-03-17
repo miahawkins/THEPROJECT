@@ -37,7 +37,7 @@ const UserList = ({ users }) =>
    <img src="http://getmespark.com/wp-content/uploads/welcome_thumb_tacks_1600_clr_9661.png" height="40%" width="40%"/>
 
     
-    <h2>This is a team colaborative to test functionality for work related web solutions...</h2>
+    <h2>This is a team collaborative to test functionality for work related web solutions...</h2>
     <h3>The following can be contacted for updates to this site:</h3>
     
     {Object.keys(users).map(key =>
